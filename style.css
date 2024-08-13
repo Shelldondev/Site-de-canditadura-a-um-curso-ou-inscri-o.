@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0077F2;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#form {
+    background-color: #fff;
+    padding: 30px;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo1 {
+    width: 50px;
+    height: 65px;
+    margin: 0 auto 15px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #0077f2;
+    margin-bottom: 20px;
+}
+
+form p {
+    color: rgb(104, 97, 97);
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    max-width: 350px;
+    height: 40px;
+    margin: 0 auto 15px;
+    border: 1px solid #5a5a5a;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+
+.buttom {
+    width: 100%;
+    max-width: 270px;
+    height: 66px;
+    border-radius: 21px;
+    background-color: #36B864;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.buttom:hover {
+    background-color: #2a934d;
+}
+
+footer {
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+.footer {
+    background-color: #E1E1E1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.footer p {
+    width: 100%;
+}
+
+.img2 img {
+    width: 50px;
+    margin-top: 15px;
+}
+
+.link {
+    margin-top: 10px;
+}
+
+.link a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link a:hover {
+    color: #0077F2;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .buttom {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .buttom {
+        font-size: 1rem;
+    }
+}
+.link span {
+    padding: 50px;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+
+}
+.link span::before {
+    content: "";
+    color: #ff0000;
+    animation: palavras 20s infinite;
+
+}
+@keyframes palavras {
+    0%,20% {
+        content: "@Shelldondev";
+    }
+    21%,40% {
+        content: "@Shelldondev";
+    }
+    41%, 60% {
+        content: "@Shelldondev";
+    }
+    61%, 80% {
+        content: "@Sheldondev";
+    }
+    81%, 100% {
+        content: "@Shelldondev";
+    }
+}
+.link span::after {
+    content: "";
+    position: absolute;
+    height: 30px;
+    border-left: 2px solid #ffffff88;
+    right: -10px;
+    animation: cursor .5s infinite, digita 20s steps(15) infinite;
+    margin-right: 55px;
+    width: calc(100% + -94px);
+    background-color: #0077F2;
+    font-family: "Poppins" sans-serif;
+    
+}
+@keyframes cursor {
+    0%{
+        border-left: 2px solid #0077F2;
+    }
+    
+}
+@keyframes identifier {
+    
+}
+
+@keyframes digita {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + -94px);
+    }
+}
+.link h3 {
+    color: white;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
